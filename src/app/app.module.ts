@@ -13,6 +13,7 @@ import { TodoComponent } from './todo/todo.component';
 import { QuotesappComponent } from './quotesapp/quotesapp.component';
 import { NavComponent } from './nav/nav.component';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 const myRoute:Routes=[
 
   {
@@ -82,7 +83,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
